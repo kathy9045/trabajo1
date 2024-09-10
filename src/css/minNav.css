@@ -1,0 +1,107 @@
+/* NAV2 */
+div.nv1 {
+    width: 100%;
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra todo horizontalmente */
+    z-index: 1;
+    height: 55px; /* Altura aumentada */
+    margin-top: 6px;
+    background-color: #1E81B0; /* Color de fondo */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+    border-bottom: 2px solid #145374; /* Línea sutil en la parte inferior */
+}
+
+/* Estilo para la parte izquierda con el logo y menú hamburguesa */
+div.nav-left {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Espacio entre logo y otros elementos */
+}
+
+.nav-left .logo {
+    margin-right: 10px; /* Ajusta el espacio entre logo y el menú */
+}
+
+.nav-left .hamburger {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Barra de búsqueda centrada */
+div.search-bar {
+    flex: 1; /* Se expande para ocupar espacio en el centro */
+    display: flex;
+    justify-content: center;
+    margin-right: 20px; /* Espacio entre la barra y los iconos de la derecha */
+}
+
+.search-bar input {
+    width: 60%; /* Ancho ajustado de la barra de búsqueda */
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: width 0.3s ease;
+}
+
+.search-bar input:focus {
+    outline: none;
+    width: 70%; /* Se agranda al hacer focus */
+}
+
+/* Iconos de la derecha */
+div.nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-right .icon {
+    color: white;
+    margin-left: 70px; /* Espacio entre los iconos */
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.nav-right .icon:hover {
+    transform: scale(1.1);
+    color: #62B6CB;
+}
+
+/* Estilos para los elementos de navegación (ul) */
+ul.itemsnv2 {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center; /* Centra los elementos de la lista */
+}
+
+ul.itemsnv2 li {
+    color: #cfd7df;
+    margin-right: 30px; 
+}
+
+li.itemnv2 a.tooltip-link {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background-color: #1B4965;
+    transition: all 0.3s ease;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    font-weight: 500;
+}
+
+li.itemnv2 a.tooltip-link:hover {
+    background-color: #62B6CB;
+    color: #ffffff;
+    font-weight: 600;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+    cursor: pointer;
+}

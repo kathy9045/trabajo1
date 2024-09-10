@@ -1,0 +1,26 @@
+.filtros-container {
+  margin-bottom: 15px; /* Reduce el margen inferior */
+  display: flex;
+}
+
+.filtros-container label {
+  display: block;
+  margin-bottom: 8px; /* Reduce el margen inferior de las etiquetas */
+  font-size: 14px; /* Tamaño de fuente más pequeño */
+  color: #333; /* Color de texto más sutil */
+}
+
+.filtros-container select,
+.filtros-container input {
+  border-radius: 5px; /* Bordes más suaves */
+  padding: 6px; /* Relleno más pequeño */
+  width: 180px; /* Ancho más pequeño */
+  margin-top: 3px; /* Margen superior reducido */
+  margin-right: 15px; /* Margen derecho reducido */
+  border: 1px solid #ccc; /* Borde más sutil */
+  font-size: 14px; /* Tamaño de fuente más pequeño */
+}
+
+input.filtrom {
+  border-radius: 5px; /* Bordes más suaves */
+}

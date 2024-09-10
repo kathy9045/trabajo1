@@ -1,0 +1,93 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "admin123",
+      "apellidos": "perez",
+      "email": "admin123@gmail.com",
+      "password": "827ccb0eea8a706c4c34a16891f84e7b",
+      "role": "Administrador"
+    },
+    {
+      "id": "2",
+      "username": "client123",
+      "apellidos": "perez",
+      "email": "client123@gmail.com",
+      "password": "202cb962ac59075b964b07152d234b70",
+      "role": "Cliente"
+    },
+    {
+      "id": "3",
+      "username": "client456",
+      "apellidos": "perez",
+      "email": "client456@gmail.com",
+      "password": "ce5d1e43b0e6b5f5b37737fa951fe533",
+      "role": "Cliente"
+    },
+    {
+      "id": "4be7",
+      "username": "santiago",
+      "apellidos": "delgado",
+      "email": "edpsantii328@gmail.com",
+      "password": "827ccb0eea8a706c4c34a16891f84e7b",
+      "role": "Administrador"
+    },
+    {
+      "id": "bee1",
+      "username": "santi",
+      "email": "roblo76@gmail.com",
+      "password": "827ccb0eea8a706c4c34a16891f84e7b",
+      "role": "user"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Sofá de cuero",
+      "description": "Sofá de cuero de alta calidad, ideal para la sala de estar.",
+      "price": 2500.99,
+      "category": "Muebles",
+      "stock": 10
+    },
+    {
+      "id": "2",
+      "name": "Mesa de comedor de madera",
+      "description": "Mesa de comedor hecha de madera sólida, con capacidad para 6 personas.",
+      "price": 800.5,
+      "category": "Muebles",
+      "stock": 5
+    },
+    {
+      "id": "3",
+      "name": "Lámpara de pie moderna",
+      "description": "Lámpara de pie con diseño moderno, perfecta para iluminar cualquier habitación.",
+      "price": 150.75,
+      "category": "Decoración",
+      "stock": 20
+    },
+    {
+      "id": "4",
+      "name": "Estantería de pared",
+      "description": "Estantería de pared flotante, ideal para exhibir libros y objetos decorativos.",
+      "price": 120,
+      "category": "Decoración",
+      "stock": 15
+    },
+    {
+      "id": "5",
+      "name": "Cama king size",
+      "description": "Cama king size con estructura de madera maciza y cabecero acolchado.",
+      "price": 1800,
+      "category": "Muebles",
+      "stock": 8
+    },
+    {
+      "id": "6",
+      "name": "Alfombra de área grande",
+      "description": "Alfombra suave y duradera, ideal para salas de estar o dormitorios.",
+      "price": 300.25,
+      "category": "Decoración",
+      "stock": 12
+    }
+  ]
+}
