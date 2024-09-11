@@ -4,6 +4,7 @@ import '../css/Navbar.css'; // Asegúrate de incluir tu archivo de estilos
 import Search from './search';
 import MinNav from './minNav';
 
+
 const NavBar = () => {
     
     const [isOpen, setIsOpen] = useState(false);
@@ -124,19 +125,19 @@ const NavBar = () => {
                 <div className="sidebar-content">
                     <ul className="lists">
                         <li className="list">
-                            <Link to="#" className="nav-link">
+                            <Link to="/" className="nav-link">
                                 <i className='bx bx-home-alt icon'></i>
                                 <span className="link">Inicio</span>
                             </Link>
                         </li>
                         <li className="list">
-                            <Link to="/" className="nav-link">
+                            <Link to="Catalogo" className="nav-link">
                                 <i className='bx bx-store icon'></i>
                                 <span className="link">Catalogo</span>
                             </Link>
                         </li>
                         <li className="list">
-                            <Link to="#" className="nav-link">
+                            <Link to="Cart" className="nav-link">
                                 <i className='bx bxs-cart icon'></i>
                                 <span className="link">Tu Carrito</span>
                             </Link>

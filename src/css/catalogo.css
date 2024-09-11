@@ -1,223 +1,109 @@
-div.catalog{
+/* Estilos para el catálogo */
+.mueble-container {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    font-family: Arial, sans-serif;
-    background-color: #fdfcff;
-    background-size: 50px 50px;
-    min-height: 100vh;
-    background-color: #fdfcff;
-    margin:200px;
-}
-
-div.container1 {
-
-    margin-top: 20pc;
-    height: 100vh;
-    border-radius: 20px;
-    display: flex;
-    max-width: 1200px;
-    background-color: #ffffff;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    gap: 1rem; /* Espacio entre los muebles */
+  }
+  
+  .mueble {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
     overflow: hidden;
-}
-div.container2 {
-    height: 100vh;
-    border-radius: 20px;
-    display: flex;
-    width: 1200px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-}
-
-.filtros {
-    color: #3f3f3f;
-    width: 250px;
-    padding: 20px;
-    border-right: 1px solid #e0e0e0;
-}
-
-.resultados {
-    flex-grow: 1;
-    padding: 20px;
-    overflow-y: auto;
-}
-
-.breadcrumb {
-    margin-bottom: 20px;
-    color: #666;
-    font-size: 14px;
-}
-
-.filtro-seccion {
-    margin-bottom: 15px;
-    border-bottom: 1px solid #e0e0e0;
-    padding-bottom: 15px;
-}
-
-.filtro-titulo {
-    color: #444;
-    font-weight: bold;
-    margin-bottom: 10px;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.filtro-opciones {
-    display: none;
-    margin-top: 10px;
-    padding-left: 10px;
-}
-
-.filtro-opcion {
-    margin-bottom: 5px;
-}
-
-.filtro-opcion label {
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    color: #666;
-}
-
-.filtro-opcion input[type="checkbox"] {
-    margin-right: 10px;
-    accent-color: #3087f8;
-}
-
-.rango-precios {
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
-}
-
-.rango-precios input {
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    width: calc(50% - 5px);
-    padding: 5px;
-    font-size: 14px;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-.barra-resultados {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-.barra-resultados p {
-    margin: 0;
-    font-size: 16px;
-    color: #444;
-}
-
-select#color {
-    block-size: 40px;
-    inline-size: 100%;
-    margin-top: 10px;
-    background: #f7f7f7;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 5px;
-    font-size: 14px;
-    color: #666;
-    outline: none;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-select#ordenar {
-    block-size: 35px;
-    inline-size: 180px;
-    background: #f7f7f7;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 5px;
-    font-size: 14px;
-    color: #444;
-    outline: none;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-}
-
-.opciones-vista {
-    display: flex;
-    gap: 10px;
-}
-
-.opcion-vista {
-    cursor: pointer;
-    padding: 5px 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f7f7f7;
-    font-size: 14px;
-    color: #444;
-    transition: background-color 0.3s, box-shadow 0.3s;
-}
-
-.opcion-vista:hover {
-    background-color: #e0e0e0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-
-/* Estilo para la sección de resultados */
-.resultados {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    background-color: #f5f5f5;
-}
-
-/* Contenedor de la cuadrícula de productos */
-.container3 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    width: 100%;
-    max-width: 1200px;
-}
-
-/* Estilo para cada card de producto */
-.product-card {
-    background-color: #ffffff;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 220px; /* Ajustado para un tamaño ligeramente más grande */
+    height: 330px; /* Ajustado para un tamaño ligeramente más grande */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
-}
-
-/* Estilo para el título del producto */
-.product-card h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-/* Estilo para el resto del contenido */
-.product-card p {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 8px;
-}
-
-/* Efecto hover para la card */
-.product-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
- 
-
-.cardbtn{
+    display: flex;
+    flex-direction: column; /* Para organizar el contenido verticalmente */
+    padding: 0.5rem; /* Espaciado interno */
+  }
+  
+  .mueble-image {
+    width: 100%;
+    height: 180px; /* Altura ajustada para mayor visibilidad */
+    object-fit: cover; /* Asegura que la imagen ocupa el área sin distorsionarse */
+    cursor: pointer;
+  }
+  
+  .mueble-info {
+    flex-grow: 1; /* Rellena el espacio disponible */
+  }
+  
+  .mueble-info h3 {
+    font-size: 1.2rem; /* Aumentado para mayor visibilidad */
+    margin: 0.5rem 0;
+  }
+  
+  .stars {
+    color: gold;
+  }
+  
+  .star.filled {
+    color: gold;
+  }
+  
+  /* Detalle del Mueble */
+  .detail-viewer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 600px;
+    width: 90%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  
+  .detail-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .detail-image {
+    width: 100%;
+    max-width: 400px; /* Limita el tamaño máximo de la imagen */
+    height: auto;
+  }
+  
+  .detail-info {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .detail-info h2 {
+    font-size: 1.5rem;
+  }
+  
+  .detail-info p {
+    margin: 0.5rem 0;
+  }
+  
+  .add-to-cart-button, .back-to-catalog-button {
+    padding: 10px 20px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
     border-radius: 5px;
-    padding: 7px;
-    margin:4px;
-
-}
-.cardbtn Link{
-    text-decoration: none;
-}
+  }
+  
+  .add-to-cart-button {
+    background-color: #28a745;
+  }
+  
+  .back-to-catalog-button {
+    background-color: #007bff;
+  }
+  
+  .add-to-cart-button:hover, .back-to-catalog-button:hover {
+    opacity: 0.8;
+  }
+  
